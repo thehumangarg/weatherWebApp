@@ -43,4 +43,5 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(`${port}, "127.0.0.1"`);
+server.listen(port,()=>{
+  console.log(`${port}`);})
